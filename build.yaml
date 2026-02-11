@@ -1,0 +1,15 @@
+platform: nodejs
+platformVersion: "20"
+autoDeploy: true
+
+run:
+  port: 3000
+  startCommand: node server.js
+
+database:
+  enabled: true
+  engine: postgres
+  framework: prisma
+  schema: prisma/schema.prisma
+  sync: npx prisma db push --accept-data-loss
+  seed: npx prisma db seed

@@ -1,0 +1,23 @@
+{
+  "name": "embr-test-app",
+  "version": "1.0.0",
+  "description": "Test app for Embr database integration (Prisma + Express)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "prisma:generate": "npx prisma generate",
+    "prisma:push": "npx prisma db push",
+    "prisma:seed": "npx prisma db seed"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.3.0",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.3.0"
+  }
+}
