@@ -39,9 +39,3 @@ model Category {
   name      String   @unique
   createdAt DateTime @default(now())
 }
-
-model Tag {
-  id        Int      @id @default(autoincrement())
-  label     String   @unique
-  createdAt DateTime @default(now())
-}
