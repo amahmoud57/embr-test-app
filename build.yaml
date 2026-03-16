@@ -11,5 +11,4 @@ database:
   engine: postgres
   framework: prisma
   schema: prisma/schema.prisma
-  sync: npx prisma db push --accept-data-loss
   seed: npx prisma db seed
